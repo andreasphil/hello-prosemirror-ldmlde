@@ -8,7 +8,7 @@ Try the prototype at <https://andreasphil.github.io/hello-prosemirror-ldmlde>.
 
 You'll find the editor with some example content on the left side, and the output as JSON and HTML on the right side.
 
-Press highlight some text and <kbd>CTRL+R</kbd> to create a ref. Changing attributes of the refs or removing them is currently not supported, but should be straightforward to implement.
+Highlight some text and press <kbd>CTRL+R</kbd> to create a ref. Changing attributes of the refs or removing them is currently not supported, but should be straightforward to implement.
 
 ## Notes
 
