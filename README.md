@@ -12,7 +12,7 @@ Press highlight some text and <kbd>CTRL+R</kbd> to create a ref. Changing attrib
 
 ## Notes
 
-> [!INFO]
+> [!NOTE]
 >
 > The general evaluation results can be found on our discovery Miro. Below are just a few notes about technical implications of this appraoch, which are "good to know" but no arguments for or against it.
 
