@@ -1,0 +1,99 @@
+@import "prosemirror-view/style/prosemirror.css" layer(prosemirror);
+
+body {
+  color-scheme: light dark;
+  background-color: Canvas;
+  color: CanvasText;
+  font-family: system-ui, ui-sans-serif, sans-serif;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 1rem;
+}
+article,
+blockquote,
+header,
+footer,
+ol,
+ul,
+hr,
+p,
+pre {
+  margin: 1.5em 0;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.ProseMirror {
+  height: 100%;
+  overflow: auto;
+  padding: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100dvh;
+  padding: 2rem;
+  width: 100%;
+
+  > * {
+    border: 2px solid CanvasText;
+
+    &:has(:focus) {
+      border-color: LinkText;
+    }
+  }
+
+  main {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding: 0;
+  }
+
+  aside,
+  output {
+    font-family: ui-monospace, monospace;
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  aside {
+    grid-column: 2;
+    grid-row: 1 / span 1;
+    white-space: pre;
+  }
+
+  output {
+    grid-column: 2;
+    grid-row: 2 / span 1;
+  }
+}
+
+[data-akn="ref"] {
+  background-color: Mark;
+  color: MarkText;
+  padding: 0 0.25ch;
+}
